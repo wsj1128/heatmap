@@ -169,8 +169,9 @@ namespace heatmap
             newbmp.Save("Image1.png");
 
             pictureBox1.Image = Image.FromFile("Image1.png");
-
-            
+            //调整窗口大小
+            this.Width = newbmp.Width;
+            this.Height = newbmp.Height;
 
         }
 
